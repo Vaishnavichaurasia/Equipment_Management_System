@@ -1,0 +1,366 @@
+.footer_container {
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+
+  z-index: 999;
+  background-color: gainsboro;
+}
+.footer_main_section {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  width: 100%;
+}
+
+.footer_icons_section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.footer_icons_section a {
+  height: 4.5vh;
+}
+.facebook,
+.google,
+.twitter,
+.instagram,
+.youtube {
+  width: 24px;
+  height: 23px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid none;
+  border-radius: 5rem;
+  margin: 0 1rem;
+  line-height: 4.5vh;
+}
+
+.footer_left_text {
+  padding-left: 2rem;
+  position: absolute;
+  color: black;
+  font-weight: 500;
+
+  margin-bottom: 1rem;
+}
+.adyant_footer_link {
+  margin-bottom: 2.5rem;
+}
+.footer_right_text {
+  padding-right: 2rem;
+  position: absolute;
+  right: 0;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .footer_container {
+    height: 80px;
+  }
+
+  .footer_left_text,
+  .footer_right_text {
+    position: initial;
+    padding: 0;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  .footer_icons_section a {
+    height: auto;
+  }
+
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 21px;
+    height: 21px;
+    margin: 0 0.5rem;
+  }
+  .footer_left_text,
+  .footer_right_text {
+    font-size: 0.8rem;
+  }
+
+  .footer_main_section {
+    display: block;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.8rem;
+  }
+}
+@media (max-width: 702px) {
+  .footer_container {
+    height: 80px;
+  }
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 21px;
+    height: 21px;
+    margin: 0 0.5rem;
+  }
+  .footer_left_text,
+  .footer_right_text {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .footer_container {
+    height: 80px;
+  }
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.5rem;
+  }
+
+  .footer_left_text,
+  .footer_right_text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) and (orientation: landscape) {
+  .footer_container {
+    height: 80px;
+  }
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.5rem;
+  }
+
+  .footer_left_text,
+  .footer_right_text {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (max-height: 700px) and (orientation: landscape) {
+  .footer_container,
+  .footer_icons_section {
+    height: 7vh;
+  }
+  .footer_main_section {
+    padding-top: auto;
+  }
+  .footer_left_text {
+    margin-bottom: 0;
+  }
+  .adyant_footer_link {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 600px) and (orientation: landscape) {
+  .footer_container,
+  .footer_icons_section {
+    height: 7.5vh;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 550px) and (orientation: landscape) {
+  .footer_container,
+  .footer_icons_section {
+    height: 8.5vh;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 500px) and (orientation: landscape) {
+  .footer_container,
+  .footer_icons_section {
+    height: 8vh;
+  }
+  .footer_icons_section a {
+    height: 7vh;
+  }
+  .footer_left_text {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 450px) and (orientation: landscape) {
+  .footer_container,
+  .footer_icons_section {
+    height: 9vh;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 450px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (max-height: 600px) and (orientation: landscape) {
+  .footer_container {
+    height: 7vh;
+  }
+  .footer_icons_section a {
+    height: 5vh;
+  }
+  .footer_left_text {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (max-width: 1080px) and (max-height: 550px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 6vh;
+  }
+}
+@media only screen and (max-width: 1080px) and (max-height: 500px) and (orientation: landscape) {
+  .footer_container {
+    height: 8vh;
+  }
+  .footer_icons_section {
+    height: 8vh;
+    padding-bottom: 0.5rem;
+  }
+  .footer_main_section {
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: left;
+  }
+  .footer_left_text {
+    position: absolute;
+    padding-left: 0.5rem;
+    color: black;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .adyant_footer_link {
+    padding-bottom: 0.4rem;
+  }
+  .footer_right_text {
+    position: absolute;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1080px) and (max-height: 400px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 8vh;
+  }
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-height: 700px) and (min-height: 500px) and (orientation: landscape) {
+  .footer_container {
+    height: 5vh;
+  }
+  .footer_icons_section a {
+    height: 5vh;
+  }
+  .footer_main_section {
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: left;
+    padding-top: 0;
+  }
+  .footer_left_text {
+    position: absolute;
+    padding-left: 0.5rem;
+    color: black;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .adyant_footer_link {
+    padding-bottom: 0.4rem;
+  }
+  .footer_right_text {
+    position: absolute;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 18px;
+    height: 18px;
+    margin: 0 0.2rem;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 580px) and (min-height: 500px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 6.5vh;
+  }
+  .footer_left_text {
+    margin-bottom: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 540px) and (min-height: 500px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 7.5vh;
+  }
+  .footer_left_text {
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 500px) and (orientation: landscape) {
+  .footer_container,
+  .footer_icons_section {
+    height: 8vh;
+  }
+  .footer_main_section {
+    height: 3rem;
+    padding-top: 0;
+  }
+  .footer_left_text {
+    margin-bottom: 1rem;
+  }
+  .adyant_footer_link {
+    padding-bottom: 0.3rem;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 380px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 9vh;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 350px) and (orientation: landscape) {
+  .footer_icons_section a {
+    height: 10vh;
+  }
+  .footer_left_text {
+    margin-bottom: 1.5rem;
+  }
+  .facebook,
+  .google,
+  .twitter,
+  .instagram,
+  .youtube {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.3rem;
+  }
+}

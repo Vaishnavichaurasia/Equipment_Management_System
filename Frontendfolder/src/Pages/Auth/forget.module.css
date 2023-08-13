@@ -1,0 +1,232 @@
+@import url(../../App.css);
+
+.registrationContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.BackgroundImageContainer {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.RegisterImg {
+    width: 96%;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.formContent {
+    width: 50%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.FormContainer {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    letter-spacing: 1.7px;
+}
+
+.headingLabel {
+    font-size: var(--subHeading-font-size);
+    font-weight: 300;
+    margin-top: 10px;
+    color: #9c9c9c;
+}
+
+.inputContainer {
+    margin: 15px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fullInputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    position: relative;
+}
+
+.label {
+    font-size: var(--label-font-size);
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    white-space: nowrap;
+}
+
+.subLabel {
+    color: #9c9c9c
+}
+
+.inputBox {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #9c9c9c;
+    caret-color: var(--highlight-color);
+    background-color: var(--secondary-bg-color);
+    letter-spacing: 1.7px;
+    font-size: var(--label-font-size);
+    padding: 0 8px;
+}
+
+.inputBox:focus {
+    outline: 1px solid var(--highlight-color);
+}
+
+.submitBtn {
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: var(--highlight-color);
+    color: var(--primary-bg-color);
+    font-size: var(--label-font-size);
+    letter-spacing: 1.8px;
+    font-weight: 600;
+}
+
+.submitBtn:hover {
+    background-color: var(--primary-bg-color);
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+    cursor: pointer;
+}
+
+.errorText {
+    font-size: var(--subHeading-font-size);
+    color: red;
+    cursor: pointer;
+}
+
+.alert {
+    position: absolute !important;
+    top: 5vh;
+    right: 2vw;
+    border-radius: 10px;
+    width: min-content !important;
+    z-index: 10;
+
+}
+
+
+.forgetText {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: red;
+    gap: 10px;
+    font-size: var(--label-font-size);
+    cursor: pointer;
+}
+
+.registrationText {
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--label-font-size);
+}
+
+.highlightCreate {
+    color: blue;
+    cursor: pointer;
+    font-size: var(--content-small-size);
+}
+
+.disable {
+    opacity: .6;
+    pointer-events: none;
+    cursor: not-allowed;
+
+}
+
+
+.eyeContainer {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+@media screen and (max-width:920px) {
+
+    .inputContainer {
+        margin: 15px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+@media screen and (max-width:720px) {
+
+    .FormContainer {
+        margin-top: 10%;
+        width: 85%;
+        margin-bottom: 2%;
+    }
+
+    .formContent {
+
+        background-color: var(--primary-bg-color);
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+        margin: auto auto 0 auto
+    }
+
+    .BackgroundImageContainer {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .RegisterImg {
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .alert {
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        border-radius: 10px;
+        width: min-content;
+        z-index: 10;
+        margin: auto;
+        left: 0
+    }
+
+    .registrationContainer {
+        min-height: 100vh;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+    .formContent {
+        width: 90%;
+        margin-bottom: 18%;
+    }
+}

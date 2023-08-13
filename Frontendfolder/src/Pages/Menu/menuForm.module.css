@@ -1,0 +1,329 @@
+/**
+* Added by - Ashish Dewangan on 16-06-2023
+* Reason - Created to have styling details of settings form page
+*/
+@import "../../App.css";
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../assets/font/Carlito-Bold.ttf") format("opentype");
+}
+
+.container {
+  width: 100%;
+  background-color: #e7f1f1;
+  /* commented and modified by suman sahu on 17/06/2023 
+     reason - adjust page according to sidebar, header and footer in the full screen*/
+  /* margin-bottom: 50px; */
+  overflow: scroll;
+  height: 86.5vh;
+  /* end of code by - suman sahu on 17/06/2023 */
+}
+
+.titleContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.pageTitle {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.menuSection {
+  min-height: auto;
+  background-color: transparent;
+  margin: auto 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #9c9c9c;
+  /* background-color: #e7f1f1; */
+  background-color: white;
+  width: fit-content;
+  margin: auto auto;
+  margin-bottom: 20px;
+  padding: 20px 80px;
+}
+
+.sectionInsideForm{
+    margin-top: 30px;
+    background-color: #e6f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:
+      var(--ds-shadow-raised,0 1px 2px 0 rgba(9,30,66,.25));
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.inputArea {
+  display: flex;
+  align-items: center;
+}
+
+.inputLabel {
+  width: 250px;
+  font-weight: bold;
+}
+
+.textInputBox {
+  width: 200px;
+  border: 1px solid black;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: white;
+}
+
+.menuImageContainer{
+  width: 200px;
+}
+.menuImage{
+  border-radius:5px;
+  border:1px solid black;
+}
+
+.inputErrorArea {
+  margin-left: 250px;
+  width: 200px;
+  color: red;
+}
+
+.actionContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.backButton {
+  background-color: #1f2937;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  font-size: 18px;
+  width:100px;
+  margin-top: 10px;
+  text-align: center;
+}
+.backButton:hover {
+  cursor: pointer;
+  background-color:#62686c;
+}
+
+.cancelButton {
+  /* background-color: #585a5b; */
+  background-color: #797b7c;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  font-size: 18px;
+  width:100px;
+  margin-top: 10px;
+  text-align: center;
+}
+.cancelButton:hover {
+  cursor: pointer;
+  background-color:#a7b4bd;
+}
+
+.proceedButton {
+  background-color: #51c14b;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  font-size: 18px;
+  width:100px;
+  margin-top: 10px;
+  text-align: center;
+}
+.proceedButton:hover {
+  cursor: pointer;
+  background-color: #1f871b;
+}
+
+.mendatoryField{
+  color:red;
+}
+.optionalField{
+  visibility: hidden;
+}
+
+@media screen and (max-width: 4000px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+  }
+  .menuSection {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+  }
+  .menuSection {
+    padding: 20px 20px;
+  }
+  .inputLabel {
+    width: 250px;
+  }
+  .textInputBox {
+    width: 200px;
+  }
+  .inputErrorArea {
+    margin-left: 250px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+    /* min-height: 82vh; */
+    margin-bottom: 11vh;
+  }
+  .menuSection {
+    padding: 20px 20px;
+    /* margin-bottom: 11vh; */
+  }
+  .inputLabel {
+    width: 300px;
+  }
+  .textInputBox {
+    width: 200px;
+  }
+  .inputErrorArea {
+    margin-left: 300px;
+    width: 200px;
+  }
+}
+
+/* added by suman sahu on 17/06/2023 
+   reason - adjust page according to sidebar, header and footer in the responsive*/
+  @media screen and (max-width: 768px) {
+  .container {
+    height: 73vh;
+  }
+}
+/* end of code by - suman sahu on 17/06/2023 */
+
+@media screen and (max-width: 720px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+    margin-bottom: 11vh;
+  }
+  .menuSection {
+    margin-bottom: 20px;
+  }
+  .inputLabel {
+    width: 250px;
+  }
+  .textInputBox {
+    width: 200px;
+  }
+  .inputErrorArea {
+    margin-left: 250px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+  }
+  .inputArea {
+    flex-direction: column;
+  }
+  .inputLabel {
+    align-self: flex-start;
+    width: 400px;
+  }
+  .textInputBox {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .inputErrorArea {
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 0px;
+  }
+  .menuImageContainer{
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+  }
+  .inputArea {
+    flex-direction: column;
+  }
+  .inputLabel {
+    width: 300px;
+    align-self: flex-start;
+  }
+  .textInputBox {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .proceedButton,.cancelButton,.backButton{
+    width:90px;
+    font-size: 17px;
+    padding:3px 3px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    --common-column-width: 15%;
+    --common-column-min-width: 15%;
+    --common-column-display: unset;
+  }
+  .inputArea {
+    flex-direction: column;
+  }
+  .inputLabel {
+    width: 250px;
+    align-self: flex-start;
+  }
+  .textInputBox {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .inputErrorArea {
+    margin-left: 0px;
+    width: 90%;
+    margin-right: 0px;
+  }
+}

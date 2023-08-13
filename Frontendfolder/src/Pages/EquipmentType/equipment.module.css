@@ -1,0 +1,387 @@
+@import "../../App.css";
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../../assets/font/Carlito-Bold.ttf") format("opentype");
+}
+
+.container {
+  width: 100%;
+  overflow: scroll;
+  height: 86.5vh;
+  background-color: white;
+
+}
+
+.pageTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto 10px;
+  margin-top: 10px;
+}
+
+.pageTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menuListSection {
+  min-height: auto;
+  margin: auto 10px;
+  margin-top: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableContainer {
+  width: 100%;
+  padding: 4px;
+  background-color: #efefef;
+}
+
+.tableHeadingContainer {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cad0d0;
+  font-family: "MyFont";
+  padding: 3px;
+}
+
+.tableDataContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 3px;
+}
+.tableData {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  box-shadow: var(--ds-shadow-raised, 0 1px 2px 0 rgba(9, 30, 66, 0.25));
+}
+
+.commonColumnTitle {
+  width: var(--common-column-width);
+  min-width: var(--common-column-min-width);
+  padding: 5px 0px;
+  height: 100%;
+  display: var(--common-column-display);
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commonColumnData {
+  width: var(--common-column-width);
+  min-width: var(--common-column-min-width);
+  padding: 5px 0px;
+  height: 100%;
+  display: var(--common-column-display);
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox{
+    width: 60%;
+}
+
+.menuImage{
+    width:45px;
+    height:45px;
+    border-radius: 5px;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.primaryButton {
+  background-color: #51c14b;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.primaryButton:hover {
+  cursor: pointer;
+  background-color: #1f871b;
+}
+
+.secondaryButton {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+
+.secondaryButton:hover {
+  cursor: pointer;
+  background-color: rgb(202, 19, 19);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yesIcon {
+  color: green;
+  width: 20px;
+  height: 20px;
+}
+
+.noIcon {
+  color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.sortingIcon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+
+.paginationContent{
+  display: flex;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: black;
+  padding: 0 10px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid grey;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  min-width: max-content;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.dropdown_content span {
+  color: black;
+  padding: 4px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content span:hover {background-color: #f1f1f1}
+
+.open{
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f2f2f2;
+}
+
+
+@media screen and (max-width: 4000px) {
+  .container {
+    --common-column-width: 15vw;
+    --common-column-min-width: 15vw;
+    --common-column-display: unset;
+  }
+
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    --common-column-width: 15vw;
+    --common-column-min-width: 15vw;
+   
+    --common-column-display: unset;
+  }
+  
+  .searchBox{
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    
+    --common-column-width: 15vw;
+    --common-column-min-width: 15vw;
+    
+    --common-column-display: unset;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    
+    --common-column-width: 15vw;
+    --common-column-min-width: 15vw;
+    
+    --common-column-display: unset;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+   
+    --common-column-width: 15vw;
+    --common-column-min-width: 15vw;
+   
+    --common-column-display: unset;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+   
+    --common-column-width: 15vw;
+    --common-column-min-width: 15vw;
+    
+    --common-column-display: unset;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+  
+    --common-column-width: 20vw;
+    --common-column-min-width: 20vw;
+    
+    --common-column-display: unset;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 73vh;
+  }
+
+     .paginationContent{
+      flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+   
+    --common-column-width: 20vw;
+    --common-column-min-width: 20vw;
+    --common-column-display: unset;
+  }
+
+  .tableHeadingContainer {
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .tableDataContainer {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+   
+    --common-column-width: 20vw;
+    --common-column-min-width: 20vw;
+   
+    --common-column-display: unset;
+  }
+
+  .tableHeadingContainer {
+    justify-content: space-around;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .tableDataContainer {
+    justify-content: space-around;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+   
+    --common-column-width: 20vw;
+    --common-column-min-width: 20vw;
+    
+    --common-column-display: unset;
+  }
+
+  .tableHeadingContainer {
+    justify-content: space-around;
+  }
+
+  .tableDataContainer {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 430px) {
+  .container {
+   
+    --common-column-width: 20vw;
+    --common-column-min-width: 20vw;
+    
+    --common-column-display: unset;
+  }
+
+  .tableHeadingContainer {
+    justify-content: space-around;
+  }
+
+  .tableDataContainer {
+    justify-content: space-around;
+  }
+  .commonColumnTitle {
+    flex-direction: column;
+  }
+}

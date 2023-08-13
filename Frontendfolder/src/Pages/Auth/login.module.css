@@ -1,0 +1,304 @@
+@import url(../../App.css);
+
+.registrationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+.BackgroundImageContainer {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.RegisterImg {
+  width: 96%;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.formContent {
+  width: 50%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.FormContainer {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.heading {
+  font-size: var(--heading-font-size);
+  font-weight: 600;
+  letter-spacing: 1.7px;
+}
+
+.headingLabel {
+  font-size: var(--subHeading-font-size);
+  font-weight: 300;
+  margin-top: 10px;
+  color: #9c9c9c;
+}
+
+.inputContainer {
+  margin: 15px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullInputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  position: relative;
+}
+
+.label {
+  font-size: var(--label-font-size);
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  white-space: nowrap;
+}
+
+.subLabel {
+  color: #9c9c9c;
+}
+
+.inputBox {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #9c9c9c;
+  caret-color: var(--highlight-color);
+  background-color: var(--secondary-bg-color);
+  letter-spacing: 1.7px;
+  font-size: var(--label-font-size);
+  padding: 0 8px;
+}
+
+.inputBox:focus {
+  outline: 1px solid var(--highlight-color);
+}
+
+.submitBtn {
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: var(--highlight-color);
+  color: var(--primary-bg-color);
+  font-size: var(--label-font-size);
+  letter-spacing: 1.8px;
+  font-weight: 600;
+}
+
+.submitBtn:hover {
+  background-color: var(--primary-bg-color);
+  border: 2px solid var(--highlight-color);
+  color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.errorText {
+  font-size: var(--subHeading-font-size);
+  color: red;
+  cursor: pointer;
+
+  width: 60%;
+}
+
+.alert {
+  position: absolute !important;
+  top: 5vh;
+  right: 2vw;
+  border-radius: 10px;
+  width: min-content !important;
+  z-index: 10;
+}
+
+.forgetText {
+  width: 100%;
+  display: flex;
+
+  color: blue;
+  gap: 10px;
+  font-size: var(--label-font-size);
+  cursor: pointer;
+
+  justify-content: flex-end;
+}
+
+.registrationText {
+  margin-top: 10px;
+  text-align: center;
+
+  font-size: var(--label-font-size);
+}
+
+.highlightCreate {
+  color: blue;
+  cursor: pointer;
+
+  font-size: var(--content-small-size);
+}
+
+.eyeContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+}
+
+.forget_content {
+  white-space: nowrap;
+  text-align: right;
+  color: blue;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+  .inputContainer {
+    margin: 15px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .FormContainer {
+    margin-top: 10%;
+  }
+  .formContent {
+    background-color: var(--primary-bg-color);
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .BackgroundImageContainer {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .RegisterImg {
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .alert {
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    border-radius: 10px;
+    width: min-content;
+    z-index: 10;
+    margin: auto;
+    left: 0;
+  }
+
+  .registrationContainer {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .formContent {
+    width: 90%;
+  }
+
+  .FormContainer {
+    width: 88%;
+    height: auto;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 1%;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (max-height: 500px) and (orientation: landscape) {
+  .FormContainer {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 400px) and (orientation: landscape) {
+  .FormContainer {
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 1400px) and (max-height: 368px) and (orientation: landscape) {
+  .FormContainer {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 1000px) and (max-height: 336px) and (orientation: landscape) {
+  .FormContainer {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 750px) and (max-height: 400px) and (orientation: landscape) {
+  .FormContainer {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 750px) and (max-height: 346px) and (orientation: landscape) {
+  .FormContainer {
+    width: 80%;
+  }
+  .BackgroundImageContainer {
+    width: 45%;
+  }
+  .formContent {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 750px) and (max-height: 346px) and (orientation: landscape) {
+  .headingLabel {
+    margin-top: 0;
+  }
+  .fullInputContainer {
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 720px) and (max-height: 346px) and (orientation: landscape) {
+  .BackgroundImageContainer {
+    width: 100%;
+  }
+  .formContent {
+    width: 80%;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .FormContainer {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 720px) and (max-height: 300px) and (orientation: landscape) {
+  .BackgroundImageContainer {
+    width: 100%;
+  }
+  .formContent {
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .FormContainer {
+    width: 50%;
+  }
+}
